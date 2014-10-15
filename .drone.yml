@@ -3,7 +3,7 @@
 #  - dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
 image: google/golang:1.3.1
 docker:
-    dockerfile: DockerFile
+    dockerfile: Dockerfile
     docker_server: kube-1.docker.local
     docker_port: 2375
     docker_version: 1.0
