@@ -1,6 +1,7 @@
 #image: registry.docker.local/xuwang/dind
 #script:
 #  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
+image: fedora:latest
 publish:
     docker:
         dockerfile: DockerFile
