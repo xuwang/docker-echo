@@ -1,3 +1,20 @@
 image: registry.docker.local/xuwang/dind
-script:
-  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
+#script:
+#  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
+publish:
+    docker:
+        dockerfile: DockerFile
+        docker_server kube-1.docker.local
+        docker_port: 2375
+        docker_version: 1.0
+        registry_host: registry.docker.local
+        registry_protocol: http
+        registry_login: false
+        #registry_login_uri: /registry/v1/
+        #username: myuser
+        #password: mypassword
+        #email: myuser@example.com
+        image_name: xuwang/echo
+        push_latest: true
+        keep_builds: false
+        custom_tag: 0.1
