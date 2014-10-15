@@ -2,4 +2,4 @@ FROM ubuntu:latest
 
 ENTRYPOINT ["echo"]
 
-CMD ["hello world"]
+#CMD ["hello world"]
