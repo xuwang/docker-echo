@@ -1,3 +1,5 @@
 image: ubuntu:14.04
+git: 
+  path: github.com/xuwang/docker-echo
 script:
   - echo "it works..."
