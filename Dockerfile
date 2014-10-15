@@ -1,4 +1,4 @@
-FROM ubuntu:14.4
+FROM ubuntu:latest
 
 ENTRYPOINT ["echo"]
 
