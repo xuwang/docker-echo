@@ -1,3 +1,3 @@
-image: registry.docker.local/xuwang/dind:latest
+image: ubuntu:14.04
 script:
-  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
+  - echo "it works..."
