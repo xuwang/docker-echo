@@ -6,7 +6,7 @@ docker:
     dockerfile: Dockerfile
     docker_server: kube-1.docker.local
     docker_port: 2375
-    docker_version: 1.0
+    docker_version: 1.2.0
     registry_host: registry.docker.local
     registry_protocol: http
     registry_login: false
@@ -16,5 +16,5 @@ docker:
     #email: myuser@example.com
     image_name: xuwang/echo
     push_latest: true
-    keep_builds: false
+    keep_builds: true
     custom_tag: 0.1
