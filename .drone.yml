@@ -1,4 +1,4 @@
-image: ubuntu:14.04
+image: dockerfile/nginx:latest
 git: 
   path: github.com/xuwang/docker-echo
 script:
