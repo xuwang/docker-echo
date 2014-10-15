@@ -18,7 +18,7 @@ publish:
     #    username: myuser
     #    password: mypassword
     #    email: myuser@example.com
-        image_name: test/echo
+        image_name: registry.docker.local/test/echo
         push_latest: true
         keep_builds: true
         custom_tag: 0.1
