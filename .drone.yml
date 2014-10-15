@@ -1,5 +1,6 @@
-image: dockerfile/nginx:latest
+image: registry.docker.local/xuwang/dind
 git: 
   path: github.com/xuwang/docker-echo
 script:
-  - echo "it works..."
+  - cd /var/cache/drone/src/github.com/xuwang/docker-echo
+  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  .
