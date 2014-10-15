@@ -2,5 +2,4 @@ image: registry.docker.local/xuwang/dind
 git: 
   path: github.com/xuwang/docker-echo
 script:
-  - cd /var/cache/drone/src/github.com/xuwang/docker-echo
-  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  .
+  - /usr/local/bin/dkbuild registry.docker.local/xuwang/echo  /var/cache/drone/src/github.com/xuwang/docker-echo
