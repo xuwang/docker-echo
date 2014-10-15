@@ -5,7 +5,7 @@ image: fedora:latest
 script:
     - yum -y clean all
     - yum -y update
-    - yum install -y iptables ca-certificates lxc
+    - yum install -y iptables ca-certificates lxc git
     - yum -y install docker-io
 publish:
     docker:
