@@ -8,12 +8,12 @@ image: registry.docker.local/xuwang/dind
 publish:
     docker:
         dockerfile: Dockerfile
-    #    docker_server: kube-1.docker.local
-    #    docker_port: 2375
-    #    docker_version: 1.2.0
+        docker_server: kube-1.docker.local
+        docker_port: 2375
+        docker_version: 1.2.0
         registry_host: registry.docker.local
-    #    registry_protocol: http
-    #    registry_login: false
+        registry_protocol: http
+        registry_login: false
     #    registry_login_uri: /registry/v1/
     #    username: myuser
     #    password: mypassword
