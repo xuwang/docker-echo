@@ -4,7 +4,7 @@ image: registry.docker.local/xuwang/dind
 publish:
     docker:
         dockerfile: DockerFile
-        docker_server kube-1.docker.local
+        docker_server: kube-1.docker.local
         docker_port: 2375
         docker_version: 1.0
         registry_host: registry.docker.local
